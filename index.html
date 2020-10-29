@@ -7,9 +7,13 @@
 	<title>CodingWorld</title>
 </head>
 <body>
+	<!–– website name heading  ––>
 	<h1 id = "top" style="color: #8b0000; text-shadow: 4px 4px 8px orange;">Codingworld</h1>
 
 	<hr id = "gol">
+
+	<!–– navigation bar  ––>
+
 	<nav id = "gip">
 	<ul id = "nav">
 	  <li id = "nav_list"><a href="#">PROBLEMS</a></li>
@@ -19,12 +23,27 @@
 	  <li id = "nav_list"><a href="#">CUSTOM INVOCATION</a></li>
 	</ul>
 	</nav>
+	<!–– navigation bar End  ––>
 
+	<!–– name of the contest  ––>
 	<div class="content">
-
 	<h2 id = "heading"><span style="color: brown; font-size: 30px;">Cook Off</span><br>All Submissions</h2>
 
-	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for User Ids.." title="Type in a name">
+	<!–– seaching by userID  ––>
+	<input style="display: inline; position: relative; type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for User Ids.." title="Type User Id">
+
+	<!–– sort button  ––>
+	<p id = "sub" style="display: inline; position: relative;"><button onclick="sortTable()">Sort</button></p>
+	<input style="display: inline; position: relative; type="text" id="myInp" onkeyup="mySunction()" placeholder="Search for Problem.." title="Type Problem name">
+
+
+	<input  type="text" id="myInpu" onkeyup="myDunction()" placeholder="Search for Result.." title="Enter Result">
+
+
+
+
+
+	<!–– submission table   ––>
 	<table id="customers">
 	  <tr>
 	    <th>#</th>
@@ -138,6 +157,11 @@
 	  </tr>
 	</table>
 	</div>
+	<!–– ====================  ––>
+
+
+
+	<!–– javascript code for sticky navigation bar  ––>
 	<script>
 	  window.onscroll = function() {
 	    myLunction()
@@ -154,6 +178,7 @@
 	      }
 	  }
 	</script>
+	<!–– ====================  ––>
 	
 </body>
 </html>
