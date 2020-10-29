@@ -1,0 +1,77 @@
+body{
+  background-color: #E6F1F3;
+}
+
+#settle {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 290px;
+  margin-top: 40px;
+}
+
+#set {
+  float: left;
+}
+#get {
+  float: left;
+}
+
+#set a {
+  margin-top: 18px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#get a {
+  font-size: 35px;
+  display: block;
+  color: green;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#set a:hover {
+  color:blue;
+}
+#code{
+  font-size: 20px;
+}
+
+div {
+  margin-left: 300px;
+  padding: 12px;
+  background-color: #eee;
+  width: 700px;
+  height: 500px;
+  border: 1px black;
+  overflow: scroll;
+}
+
+
+
+#time {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-left: 290px;
+  margin-top: 0px;
+}
+
+#tiget {
+  float: left;
+}
+
+#tiget a {
+  margin-top: 0px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
