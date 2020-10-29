@@ -17,4 +17,13 @@ To get the project up and running the code locally, and view components in the b
 ## Development
 on building this site HTML5 , CSS , Js is used
 
+# Screenshots
+
+![](Images/codingworld%20first%20page.png)
+
+![](Images/searching.png)
+
+![](Images/coding%20second%20page.png)
+
+
 This will publish the contents of `public` to your `gh-pages` branch.
