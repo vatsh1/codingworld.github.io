@@ -2,7 +2,8 @@
 
 # Introduction
 This is a simple website for browsing all solutions submitted during a coding contest. it has two pages
-First page coding contest all submission is shown,  there also you can sort the page and also you can search by userid, result or by the problem name
+First page coding contest all submission is shown,  there also you can sort the page and also you can search by userid, result or by the problem name and 
+on clicking any #code on other page you can see there coding solution
 
 ## Installation
 To get the project up and running the code locally, and view components in the browser, complete the following steps:
