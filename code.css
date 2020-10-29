@@ -63,6 +63,30 @@ body{
   margin-bottom: 12px;
 }
 
+#myInp {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin-left: 260px;
+}
+#sub{
+	margin-left: 0px;
+}
+
+#myInpu {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin-left: 260px;
+}
 
 #customers {
   font-family: Arial, Helvetica, sans-serif;
