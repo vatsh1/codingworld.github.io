@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="page.css">
+	<title>Solution</title>
+</head>
+<body>
+	<h1 id = "top" style="color: #8b0000; text-shadow: 4px 4px 8px orange;">Codingworld</h1>
+
+	<hr>
+
+	<ul id = "settle">
+	  <li id = "get"><a href="#">Solution</a></li>
+	  <li id = "set"><a href="#">|</a></li>
+	  <li id = "set"><a href="#">Problem: <span>A</span></a></li>
+	  <li id = "set"><a href="#">|</a></li>
+	  <li id = "set"><a href="#">Contest: COOK123</a></li>
+	  <li id = "set"><a href="#">|</a></li>
+	  <li id = "set"><a href="#">User: <span id = "result">rost01</span></a></li>
+	</ul>
+	
+
+	<div>
+		<p id="code">
+		#include<iostream><br>
+		using namespace std;<br>
+		int main() {<br>
+    	
+    	int t;<br>
+    	cin>>t;<br>
+    	r:while(t--)<br>
+    	{<br>
+        	int n;<br>
+        	cin>>n;<br>
+        	string s,p ="";<br>
+        	cin>>s;<br>
+        	p = s[n-1];<br>
+        	size_t found = s.find(p);<br> 
+            if (found == n-1) <br>
+            	{<br>
+                	cout<<"NO"<<endl;<br>
+                	<span>goto r;<br></span>
+             	}<br>
+             	else<br>
+             	{<br>
+                	cout<<"YES"<<endl;<br>
+                	goto r;<br>
+             	}<br>
+    		}<br>
+    	return 0;<br>
+
+		}<br>
+		</p>
+	</div>
+
+	<ul id = "time">
+		<li id = "tiget"><a href="#">Oct/18/2020</a></li>
+		<li id = "tiget"><a href="#">|</a></li>
+		<li id = "tiget"><a href="#">C++17</a></li>
+		<li id = "tiget"><a href="#">|</a></li>
+		<li id = "tiget"><a href="#">Accepted</li>
+		<li id = "tiget"><a href="#">|</a></li>
+		<li id = "tiget"><a href="#">113ms</a></li>
+	</ul>
+
+
+</body>
+</html>
