@@ -168,25 +168,28 @@
 		background-color: #ba0b0b;
 		position: absolute;
 		width: 100%;
-		height:100px;
+		height:200px;
 		top:0;
 		left: 0;
 	}	
 	.search-feild{
 
-			width: 75%;
-			height: 40px;
-			padding: 9px;
-			padding-left: 13px;
-			margin-left: 10%;
-			border: none;
-			border-radius: 20px;
-			outline: none;
+		width: 75%;
+		height: 80px;
+		padding: 9px;
+		padding-left: 13px;
+		margin-left: 10%;
+		border: none;
+		border-radius: 20px;
+		outline: none;
+	}
+	#nam{
+		font-size:35px;
 	}
 
 	#head{
 		font-family: 'Kirang Haerang', cursive;
-		font-size: 32px;
+		font-size: 35px;
 		margin-left: 24px;
 		color: orange;
 	}
@@ -298,7 +301,7 @@
 </head>
 <body style="background-color: #f5f7eb">
 	<div id="col">
-		<span style="padding-left:12px;font-size:35px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		<span id = "nam" style="padding-left:12px;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 		<span id = "head">BHUMI STAR</span><br>
 		<input class="search-feild" type="text" name="cat" placeholder="Search by location or project">
 
