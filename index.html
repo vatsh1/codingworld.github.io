@@ -171,27 +171,27 @@
 		color: orange;
 	}
 	#mi1{
-		padding: 21px;
+		padding: 19px;
 		margin-left: 1%;
 		background-color: #606158;
-		padding-left: 45px;
-		padding-right: 50px;
+		padding-left: 40px;
+		padding-right: 40px;
 		border-radius: 25px;
 	}
 	#mi2{
-		padding: 21px;
-		margin-left: 4px;
+		padding: 19px;
+		margin-left: 2px;
 		background-color: #606158;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 40px;
+		padding-right: 40px;
 		border-radius: 25px;
 	}
 	#mi3{
-		padding: 21px;
+		padding: 19px;
 		margin-left: 3px;
 		background-color: #606158;
-		padding-left: 30px;
-		padding-right: 30px;
+		padding-left: 25px;
+		padding-right: 25px;
 		border-radius: 25px;
 	}
 	#main3{
@@ -315,6 +315,15 @@
 	<span id = "mi6" style="color:white; font-size: 23px;">Plots Photo</span>
 	<span id = "mi7" style="color:white; font-size: 23px;">Plots Photo</span>
 </div>
-	<script src={% static "js/nav.js" %} type="text/javascript"></script>
+	<script>
+		function openNav() {
+  			document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+  			document.getElementById("mySidenav").style.width = "0";
+		}
+
+	</script>
 </body>
 </html>
