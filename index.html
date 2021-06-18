@@ -1,438 +1,184 @@
-{% load static %}
-
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
-	<title>Bhumi star</title>
-	<style type="text/css">
-	.sidenav {
-	  height: 100%;
-	  width: 0;
-	  position: fixed;
-	  z-index: 1;
-	  top: 0;
-	  left: 0;
-	  background-color: lightyellow;
-	  overflow-x: hidden;
-	  transition: 0.5s;
-	  padding-top: 60px;
-	}
-
-	.sidenav a {
-	  padding: 8px 8px 8px 32px;
-	  text-decoration: none;
-	  font-size: 21px;
-	  color: black;
-	  display: block;
-	  transition: 0.3s;
-	  text-shadow: 1px 1px 10px black;
-	}
-
-	.sidenav a:hover {
-	  color: #ba0b0b;
-	}
-
-	.sidenav .closebtn {
-	  position: absolute;
-	  top: 0;
-	  right: 8px;
-	  font-size: 36px;
-	  margin-left: 40px;
-	}
-	
-	@media screen and (max-height: 550px) {
-	  .sidenav {padding-top: 15px;}
-	  .sidenav a {font-size: 18px;}
-	}
-	#navtop{
-		color: white;
-		top: 20px;
-		position: absolute;
-		margin-left: 12px;
-		font-size: 21px;
-	}
-	#log{
-		color: white;
-		top: 20px;
-		position: absolute;
-		margin-left: 155px;
-		outline: 1px;
-		outline-color: white;
-		padding: 5px;
-	}
-	#log:hover{
-		background-color: black;
-	}
-	#topmark{
-		background-color: #ba0b0b;
-	}
-	#mar{
-		background-color: #ba0b0b;
-		position: absolute;
-		width: 249px;
-		top:0;
-		height: 65px;
-	}
-	#mid{
-		background-color: lightgrey;
-		padding: 7px;
-		padding-right: 80px;
-		margin-top: 20px;
-		position: absolute;
-		font-size: 17px;
-	}
-	#head{
-		font-family: 'Kirang Haerang', cursive;
-		font-size: 26px;
-		margin-left: 24px;
-		color: orange;
-	}
-	#col{
-		background-color: #ba0b0b;
-		position: absolute;
-		width: 100%;
-		height:85px;
-		top:0;
-		left: 0;
-	}
-	.search-feild{
-
-		width: 75%;
-		height: 30px;
-		padding: 1px;
-		padding-left: 12px;
-		margin-left: 10%;
-		border: none;
-		border-radius: 20px;
-		outline: none;
-	}
-	.search-feild:active{
-		box-shadow: 6px 6px 5px lightgrey;
-	}
-	#main2{
-		margin-top: 22px;
-		margin-left: 1%;
-		margin-right: 1%;
-		background-color: #ba0b0b;
-		text-align: center;
-		padding: 12px;
-		border-radius: 25px;
-	}
-	#mi1{
-		padding: 15px;
-		margin-left: 1%;
-		font-size: 21px;
-		background-color: #606158;
-		padding-left: 70px;
-		padding-right: 70px;
-		border-radius: 25px;
-	}
-	#mi2{
-		padding: 15px;
-		margin-left: 12%;
-		font-size: 21px;
-		background-color: #606158;
-		padding-left: 70px;
-		padding-right: 70px;
-		border-radius: 25px;
-	}
-	#mi3{
-		padding: 15px;
-		margin-left: 20%;
-		font-size: 21px;
-		background-color: #606158;
-		padding-left: 40px;
-		padding-right: 40px;
-		border-radius: 25px;
-	}
-	#mi3:hover{
-		background-color: black;
-		box-shadow: 3px 3px 10px brown;
-	}
-	#mi2:hover{
-		background-color: black;
-		box-shadow: 3px 3px 10px brown;
-	}
-	#mi1:hover{
-		background-color: black;
-		box-shadow: 3px 3px 10px brown;
-	}
-	#main3{
-		margin-top: 250px;
-	}
-	
-	
-	#mi4{
-		text-align: center;
-		background-color: #ba0b0b;
-		position: absolute;
-		width: 97%;
-		height:95px;
-		top:340px;
-		left: 0;
-		margin-left: 1%;
-		border-radius: 25px;
-		padding-top: 41px;
-	}
-	#mi5{
-		background-color: #606158;
-		position: absolute;
-		width: 95%;
-		top:488px;
-		height: 40px;
-		padding-left: 23px;
-		left: 0;
-		margin-left: 1%;
-		border-radius: 23px;
-		padding-top: 8px;
-	}
-	#mi6{
-		position: relative;
-		float: right;
-		top:248px;
-		margin-right: 2%;
-		padding: 12%;
-		border-radius: 20px;
-		background-color: #ba0b0b;
-		padding-left:17%;
-		padding-right:18%;
-	}
-	#mi7{
-		position: relative;
-		float: left;
-		top:248px;
-		padding: 12%;
-		margin-left: 1%;
-		border-radius: 20px;
-		background-color: #ba0b0b;
-		padding-left:18%;
-		padding-right:18%;
-	}
-	
-	#mi8{
-		background-color: #606158;
-		position:absolute;
-		top:848px;
-		width: 95%;
-		height: 40px;
-		padding-left: 23px;
-		left: 0;
-		margin-left: 1%;
-		border-radius: 23px;
-		padding-top: 8px;
-		
-	}
-	#mi9{
-		position: relative;
-		float: right;
-		top:289px;
-		margin-right: 2%;
-		padding: 12%;
-		border-radius: 20px;
-		background-color: #ba0b0b;
-		padding-left:17%;
-		padding-right:18%;
-	}
-	#mi10{
-		position: relative;
-		float: left;
-		top:289px;
-		padding: 12%;
-		margin-left: 1%;
-		border-radius: 20px;
-		background-color: #ba0b0b;
-		padding-left:18%;
-		padding-right:18%;
-	}
-	@media screen and (max-width: 600px){
-		.search-feild{
-			width: 400px;
-			height: 30px;
-			padding: 1px;
-			padding-left: 12px;
-			margin-left: 8%;
-			border: none;
-			border-radius: 20px;
-			outline: none;
-		}
-
-		#col{
-			background-color: #ba0b0b;
-			position: absolute;
-			width: 100%;
-			height:85px;
-			top:0;
-			left: 0;
-		}
-		#mi4{
-			text-align: center;
-			background-color: #ba0b0b;
-			position: absolute;
-			width: 96%;
-			height:85px;
-			top:340px;
-			left: 0;
-			margin-left: 1%;
-			border-radius: 25px;
-			padding-top: 41px;
-		}
-
-		#head{
-			font-family: 'Kirang Haerang', cursive;
-			font-size: 26px;
-			margin-left: 24px;
-			color: orange;
-		}
-		#mi1{
-			padding: 19px;
-			margin-left: 1%;
-			background-color: #606158;
-			padding-left: 40px;
-			padding-right: 40px;
-			border-radius: 25px;
-		}
-		#mi2{
-			padding: 19px;
-			margin-left: 7px;
-			background-color: #606158;
-			padding-left: 40px;
-			padding-right: 40px;
-			border-radius: 25px;
-		}
-		#mi3{
-			padding: 19px;
-			margin-left: 6px;
-			background-color: #606158;
-			padding-left: 25px;
-			padding-right: 25px;
-			border-radius: 25px;
-		}
-		#main3{
-			margin-top: 250px;
-		}
-		#mi5{
-			background-color: #606158;
-			position: absolute;
-			max-width: 94%;
-			top:475px;
-			height: 40px;
-			padding-left: 23px;
-			left: 0;
-			margin-left: 1%;
-			margin-right: 1%
-			border-radius: 23px;
-			padding-top: 8px;
-		}
-		#mi6{
-			position: relative;
-			float: right;
-			top:238px;
-			margin-right: 2%;
-			padding:12%;
-			background-color: #ba0b0b;
-			border-radius: 20px;
-		}
-		#mi7{
-			position: relative;
-			float: left;
-			top:238px;
-			padding: 12%;
-			margin-left: 1%;
-			background-color: #ba0b0b;
-			border-radius: 20px;
-		}
-		#mi8{
-			background-color: #606158;
-			position:absolute;
-			top:40%;
-			width: 95%;
-			height: 40px;
-			padding-left: 23px;
-			left: 0;
-			margin-left: 1%;
-			border-radius: 23px;
-			padding-top: 8px;
-		
-		}
-		#mi9{
-			position: relative;
-			float: right;
-			top:270px;
-			margin-right: 2%;
-			padding: 12%;
-			border-radius: 20px;
-			background-color: #ba0b0b;
-			
-		}
-		#mi10{
-			position: relative;
-			float: left;
-			top:270px;
-			padding: 12%;
-			margin-left: 1%;
-			border-radius: 20px;
-			background-color: #ba0b0b;
-			
-		}
-	}
-	</style>
+<script src = "bit.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="code.css">
+	<title>CodingWorld</title>
 </head>
-<body style="background-color: #f5f7eb">
-	<div id="col">
-		<span style="padding-left:12px;font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-		<span id = "head">BHUMI STAR</span><br>
-		<input class="search-feild" type="text" name="cat" placeholder="Search by location or project">
+<body>
+	<!–– website name heading  ––>
+	<h1 id = "top" style="color: #8b0000; text-shadow: 4px 4px 8px orange;">Codingworld</h1>
 
-	<div id = "main2">
-		<span ><i>bhumi star banner</i></span><br>
-		<span style="color:yellow;">SPECIAL OFFER</span><br><br>
-		<span style="font-size: 25px; color: white">OFFER</span><br>
-		<span style="font-size: 35px; color: white">...</span>
+	<hr id = "gol">
+
+	<!–– navigation bar  ––>
+
+	<nav id = "gip">
+	<ul id = "nav">
+	  <li id = "nav_list"><a href="#">PROBLEMS</a></li>
+	  <li id = "nav_list"><a href="#">SUBMIT CODE</a></li>
+	  <li id = "nav_list"><a href="#">MY SUBMISSIONS</a></li>
+	  <li id = "nav_list" class="bill"><a href="#">STATUS</a></li>
+	  <li id = "nav_list"><a href="#">CUSTOM INVOCATION</a></li>
+	</ul>
+	</nav>
+	<!–– navigation bar End  ––>
+
+	<!–– name of the contest  ––>
+	<div class="content">
+	<h2 id = "heading"><span style="color: brown; font-size: 30px;">Cook Off</span><br>All Submissions</h2>
+
+	<!–– seaching by userID  ––>
+	<input style="display: inline; position: relative; type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for User Ids.." title="Type User Id">
+
+	<!–– sort button  ––>
+	<p id = "sub" style="display: inline; position: relative;"><button onclick="sortTable()">Sort</button></p>
+	<input style="display: inline; position: relative; type="text" id="myInp" onkeyup="mySunction()" placeholder="Search for Problem.." title="Type Problem name">
+
+
+	<input  type="text" id="myInpu" onkeyup="myDunction()" placeholder="Search for Result.." title="Enter Result">
+
+
+
+
+
+	<!–– submission table   ––>
+	<table id="customers">
+	  <tr>
+	    <th>#</th>
+	    <th>When</th>
+	    <th>Who</th>
+	    <th>Problem</th>
+	    <th>Lang</th>
+	    <th>Verdict</th>
+	    <th>Time</th>
+	    <th>Memory</th>
+	  </tr>
+	  <tr>
+	    <td id = "num" ><a href="page1.html" style="text-decoration: none;">#1234672</a></td>
+	    <td>Oct/10/2020</td>
+	    <td >aisel_1</td>
+	    <td>Problem A<br>Marking Scheme</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "accept">Accepted</b></td>
+	    <td>102ms</td>
+	    <td>114 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip"><a href="page.html" style="text-decoration: none;">#1234673</a></td>
+	    <td>Oct/10/2020</td>
+	    <td>ajit14</td>
+	    <td>Problem A<br>Marking Scheme</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "accept">Accepted</b></td>
+	    <td>102ms</td>
+	    <td>114 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip2"><a href="page.html" style="text-decoration: none;">#1234674</a></td>
+	    <td>Oct/11/2020</td>
+	    <td>ajit14</td>
+	    <td>Problem B<br>Playing Cards</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "accept">Accepted</b></td>
+	    <td>102ms</td>
+	    <td>114 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip3"><a href="page4.html" style="text-decoration: none;">#1234675</a></td>
+	    <td>Oct/13/2020</td>
+	    <td>bandra_1</td>
+	    <td>Problem A<br>Marking Scheme</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "wrong">Wrong<br>Answer</b></td>
+	    <td>102ms</td>
+	    <td>120 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip4"><a href="page5.html" style="text-decoration: none;">#1234676</a></td>
+	    <td>Oct/14/2020</td>
+	    <td id = "lum">shlok_1</td>
+	    <td>Problem A<br>Marking Scheme</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "wrong">Wrong<br>Answer</b></td>
+	    <td>106ms</td>
+	    <td>121 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip5"><a href="page6.html" style="text-decoration: none;">#1234677</a></td>
+	    <td>Oct/15/2020</td>
+	    <td>shlokam_01</td>
+	    <td>Problem A<br>Marking Scheme</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "accept">Accepted</b></td>
+	    <td>106ms</td>
+	    <td>121 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip6"><a href="page.html" style="text-decoration: none;">#1234678</a></td>
+	    <td>Oct/16/2020</td>
+	    <td>shlokam_01</td>
+	    <td>Problem B<br>Playing Cards</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "accept">Accepted</b></td>
+	    <td>109ms</td>
+	    <td>121 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip7"><a href="page8.html" style="text-decoration: none;">#1234679</a></td>
+	    <td>Oct/10/2020</td>
+	    <td>suraj_06</td>
+	    <td>Problem A<br>Marking Scheme</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "accept">Accepted</b></td>
+	    <td>109ms</td>
+	    <td>121 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip8"><a href="page9.html" style="text-decoration: none;">#1234680</a></td>
+	    <td>Oct/17/2020</td>
+	    <td>raina_11</td>
+	    <td>Problem A<br>Marking Scheme</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "error">Run time<br>Error</b></td>
+	    <td>113ms</td>
+	    <td>121 KB</td>
+	  </tr>
+	  <tr>
+	    <td id = "tip9"><a href="page10.html" style="text-decoration: none;">#1234681</a></td>
+	    <td>Oct/18/2020</td>
+	    <td>rost01</td>
+	    <td>Problem A<br>Marking Scheme</td>
+	    <td>GNU C++17(64)</td>
+	    <td><b id = "accept">Accepted</b></td>
+	    <td>113ms</td>
+	    <td>121 KB</td>
+	  </tr>
+	</table>
 	</div>
-	</div>
-	<div id="mySidenav" class="sidenav">
-		<span id = "mar"></span>
-		<span id = "navtop">Hello</span>
-		<span id = "log" style="outline-style: double;">Login</span>
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#" style="margin-top: 15px;">Home</a>
-		<a href="#">Properties for Buy</a>
-		<a href="#">Properties for sell</a>
-		<a href="#">New Projects</a>
-		<a href="#">Explore Localities</a>
-		<a href="#">Properties on Auction</a>
-		<span id = "mid">Sell/Rent your Property</span>
-		<a href="#" style="margin-top: 65px;">Post Property <span style="background-color: yellow; padding: 5px;">Free</span></a>
-		<a href="#">Advertise with us</a>
-	</div>
-	<div id = "main3">
-		<span id = "mi1" style="color:white;">Plot</span>
-		<span id = "mi2" style="color:white;">Home</span>
-		<span id = "mi3" style="color:white">Apartments</span>
-	</div>
-	<span id = "mi4" style="color:white; font-size: 29px;">ADVERTISEMENTS BANNER</span>
-	<span id = "mi5" style="color:white; font-size: 23px;">Bhumistar Properties</span>
-<div style="display: inline; ">
-	<span id = "mi6" style="color:white; font-size: 23px;">Plots Photo</span>
-	<span id = "mi7" style="color:white; font-size: 23px;">Plots Photo</span>
-</div>
-<div id = "min">
-	
-		<span id = "mi9" style="color:white; font-size: 23px;">Plots Photo</span>
-		<span id = "mi10" style="color:white; font-size: 23px;">Plots Photo</span>
-	
-</div>
+	<!–– ====================  ––>
+
+
+
+	<!–– javascript code for sticky navigation bar  ––>
 	<script>
-		function openNav() {
-  			document.getElementById("mySidenav").style.width = "250px";
-		}
+	  window.onscroll = function() {
+	    myLunction()
+	  };
 
-		function closeNav() {
-  			document.getElementById("mySidenav").style.width = "0";
-		}
+	  var navbar = document.getElementById("nav");
+	  var sticky = navbar.offsetTop;
 
+	  function myLunction() {
+	    if (window.pageYOffset >= sticky) {
+	        navbar.classList.add("sticky")
+	      } else {
+	        navbar.classList.remove("sticky");
+	      }
+	  }
 	</script>
+	<!–– ====================  ––>
+	
 </body>
 </html>
